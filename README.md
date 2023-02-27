@@ -1,0 +1,1 @@
+A functioning Calculator App created with HTML, CSS and JavaScript.

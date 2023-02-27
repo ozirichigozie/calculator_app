@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator_App</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
+        <link rel="stylesheet" href="calc.css"/>
+        <script src='calc.js' defer></script>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Functioning Calculator</h1>
+        <h2>Calculator with Javascript</h2>
+        <div class="container">
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="result" class="screen"></td>
+
+                    <td>
+                        <input type="button" value="C" onclick="clearScreen()" class="clear">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="1" onclick="display('1')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="2" onclick="display('2')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="3" onclick="display('3')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="+" onclick="display('+')" class="operator"/>
+                    </td>
+                    <td>
+                        <input type="button" value="-" onclick="display('-')" class="operator"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" onclick="display('4')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="5" onclick="display('5')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="6" onclick="display('6')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="*" onclick="display('*')" class="operator"/>
+                    </td>
+                    <td>
+                        <input type="button" value="exp" onclick="display('**')" class="operator"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" onclick="display('7')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="8" onclick="display('8')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="9" onclick="display('9')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="/" onclick="display('/')" class="operator"/>
+                    </td>
+                    <td>
+                        <input type="button" value="mud" onclick="display('%')" class="operator"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="." onclick="display('.')" class="decimal"/>
+                    </td>
+                    <td>
+                        <input type="button" value="0" onclick="display('0')" class="number"/>
+                    </td>
+                    <td>
+                        <input type="button" value="=" onclick="solve()" class="equal"/>
+                    </td>
+                    <td>
+                        <input type="button" value="%" onclick="display('/100')" class="operator"/>
+                    </td>
+                    <td>
+                        <input type="button" value="sq" onclick="display('**2')" class="operator"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <label class="switch dateTime toggle" id="toggle">
+                <input type="checkbox" checked>
+                <span class="slider round" onclick="darkModeFunction();""></span>
+            </label><p>Darkmode</p>
+            <br><br>
+        </div>
+    </body>
+</html>
